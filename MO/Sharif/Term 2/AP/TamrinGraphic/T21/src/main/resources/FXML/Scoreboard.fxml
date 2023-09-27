@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="view.Scoreboard"
+            stylesheets="@../CSS/style.css"
+            prefHeight="600.0" prefWidth="800.0">
+    <left>
+        <VBox alignment="CENTER" spacing="10">
+            <Button text="Easy" onMouseClicked="#easyClicked" styleClass="rich-blue" minWidth="150"/>
+            <Button text="Medium" onMouseClicked="#mediumClicked" styleClass="rich-blue" minWidth="150"/>
+            <Button text="Hard" onMouseClicked="#hardClicked" styleClass="rich-blue" minWidth="150"/>
+            <Button text="Back" onMouseClicked="#back" styleClass="rich-blue" minWidth="150"/>
+        </VBox>
+    </left>
+
+    <bottom>
+        <Label text="Powered by MDF" alignment="BOTTOM_LEFT" id="footer"/>
+    </bottom>
+</BorderPane>
